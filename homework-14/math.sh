@@ -8,4 +8,20 @@ echo "- difference"
 echo "x product"
 echo "/ quotient"
 
+read -p "Select your choice: " choice
 
+if [ $choice == "+" ]
+then
+	echo $((num1+num2))
+elif [ $choice == "-" ]
+then 
+	echo $((num1-num2))
+elif [ $choice == "x" ]
+then
+	echo $((num1*num2))
+elif [ $choice == "/" ]
+then
+	echo $((num1/num2))
+else 
+	echo "Select right choice"
+fi
