@@ -1,5 +1,14 @@
 #!/bin/bash
 
-read -p "Type your password: " password
-
-if [ $password 
+while true
+do 
+read -p "Enter password: " pass1
+read -p "Re-enter password: " pass2
+if [ "$pass1" == "$pass2" ]
+then
+	echo "Password is set."
+	break
+else
+	echo "Password dont match. Re-enter."
+fi
+done
